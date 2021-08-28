@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Krone</title>
     <meta name="title" content="Website's title">
     <meta name="description" content="Website's description">
 
@@ -44,7 +44,127 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div class="root">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__left">
+                        <div class="header__logo">
+                            <img src="./img/logo.png" alt="header logo">
+                        </div>
+                        <button class="menu-btn">
+                            <span></span>
+                        </button>
+                        <div class="header__search">
+                            <input type="text">
+                            <button>
+                                <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <p>
+                                        Статус заказа
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                    <p>
+                                        Войти
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <button>
+                                    <ion-icon name="cellular-outline"></ion-icon>
+                                    <p>
+                                        Сравнение
+                                    </p>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                    <p>
+                                        Избранное
+                                    </p>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <p>
+                                        Корзина
+                                    </p>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">ВСЕ АКЦИИ</a></li>
+                        <li><a href="#">ШКОЛЬНАЯ РАСПРОДАЖА!</a></li>
+                        <li><a href="#">ЭКСПРЕСС-ДОСТАВКА</a></li>
+                        <li><a href="#">ЛУЧШИЕ ЦЕНЫ</a></li>
+                        <li><a href="#">СМАРТФОНЫ</a></li>
+                        <li><a href="#">ТЕЛЕВИЗОРЫ</a></li>
+                        <li><a href="#">ИГРОВЫЕ НОУТБУКИ</a></li>
+                        <li><a href="#">СТИРАЛЬНЫЕ МАШИНЫ</a></li>
+                        <li><a href="#">ХОЛОДИЛЬНИКИ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="promo">
+                <div class="container">
+                    <div class="promo__wrapper">
+                        <div class="promo__inner">
+                            <div class="promo__slider">
+                                <div class="promo__item">
+                                    <img src="https://static.mvideo.ru/media/Promotions/Promo_Page/2021/August/fonovyi-keshbyk/hero_L_2432x720.png" alt="promo item">
+                                </div>
+                                <!-- <div class="promo__item">
+                                    <img src="https://static.mvideo.ru/media/Promotions/Promo_Page/2020/September/pch%2Bpyat/hero_L_2432x720.png" alt="promo item">
+                                </div>
+                                <div class="promo__item">
+                                    <img src="https://static.mvideo.ru/media/Promotions/Promo_Page/2021/August/shkolnaya-rasprodazha/2308/hero_L_2432x720.png" alt="promo item">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo__right">
+                        <div class="product">
+                            <div class="product__title">Товар дня!</div>
+                            <a href="#" class="product__img">
+                                <img src="https://img.mvideo.ru/Pdb/30052574m.jpg" alt="product img">
+                            </a>
+                            <h3 class="product__name">
+                                <a href="#">Смартфон Xiaomi Redmi 9C NFC 3+64GB Midnight Gray</a>
+                            </h3>
+                            <div class="product__bottom">
+                                <div class="prodcut__price">
+                                    <span class="old">10 900</span>
+                                    <span class="new">10 490</span>
+                                </div>
+                                <button class="product__toBasket">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
     <script src="js/app.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

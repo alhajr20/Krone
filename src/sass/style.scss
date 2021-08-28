@@ -1,7 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import './base/variables';
+@import './base/mixins';
 
 * {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@import './blocks/header';
+@import './blocks/promo';
