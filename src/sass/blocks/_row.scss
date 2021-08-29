@@ -1,0 +1,86 @@
+.row {
+    margin-top: 5.6rem;
+
+    &__title {
+        font-size: 32px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 16rem));
+        justify-content: space-between;
+        gap: 50px;
+        margin-top: 24px;
+    }
+
+    &__item {
+        background-color: #f5f5f6;
+        padding: 24px;
+        border-radius: 15px;
+        text-align: center;
+
+        img {
+            width: 160px;
+            height: 160px;
+        }
+
+        figcaption {
+            text-align: left;
+
+            h3 {
+                margin-top: 5px;
+                a {
+                    font-weight: 400;
+                    color: #6b6b6b;
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+            }
+
+            .price {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5px;
+
+                .old {
+                    text-decoration: line-through;
+                    color: #6b6b6b;
+                }
+
+                .new {
+                    margin-top: 5px;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+
+            .toBasket {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                color: #fff;
+                padding: 7px 23px;
+                background-color: $main-color;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all .2s;
+                margin-top: 5px;
+                font-weight: bold;
+
+                ion-icon {
+                    margin-right: 5px;
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &:hover {
+                    background-color: $hover-color;
+                }
+            }
+        }
+    }
+}

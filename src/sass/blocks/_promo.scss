@@ -1,20 +1,72 @@
 .promo {
     .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 360px;
         padding-top: 5.6rem;
     }
 
     &__wrapper {
+        position: relative;
         margin-right: 4rem;
         padding-bottom: 1rem;
+
+        .slider-dots {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 3;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-right: 15%;
+            margin-left: 15%;
+            list-style: none;
+        }
+    }
+
+    &__prev, &__next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border: none;
+        color: $main-color;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 3;
+
+        ion-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__prev {
+        left: 1rem;
+    }
+
+    &__next {
+        right: 1rem;
+    }
+
+    &__inner, &__slider {
+        width: 100%;
+        height: 100%;
     }
 
     &__item {
+        height: 100%;
         img {
             width: 100%;
+            height: 100%;
             border-radius: 15px;
+            object-fit: cover;
         }
     }
 
@@ -24,6 +76,7 @@
             background-color: #f5f5f6;
             padding: 24px;
             border-radius: 15px;
+            height: 100%;
 
             &__img {
                 width: 200px;
@@ -50,6 +103,47 @@
                     color: #6b6b6b;
                     text-decoration: none;
                     font-size: 16px;
+                }
+            }
+
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            &__price {
+                display: flex;
+                flex-direction: column;
+
+                .old {
+                    text-decoration: line-through;
+                    color: #6b6b6b;
+                }
+
+                .new {
+                    margin-top: 5px;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+
+            &__toBasket {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                color: #fff;
+                padding: 7px 23px;
+                background-color: $main-color;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all .2s;
+
+                &:hover {
+                    background-color: $hover-color;
                 }
             }
         }

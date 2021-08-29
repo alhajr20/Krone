@@ -1,0 +1,37 @@
+.advantage {
+    margin-top: 5.6rem;
+
+    &__title {
+        font-size: 32px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 24px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+        background-color: #f5f5f6;
+        border-radius: 5px;
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $main-color;
+            padding: 10px;
+            margin-right: 20px;
+            border-radius: 5px;
+            ion-icon {
+                font-size: 24px;
+                color: #fff;
+            }
+        }
+    }
+}

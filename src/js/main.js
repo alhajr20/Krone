@@ -1,3 +1,5 @@
+import slider from '../js/modules/slider';
+
 document.addEventListener('DOMContentLoaded', () => {
-    /* Something */
+    slider();
 });
