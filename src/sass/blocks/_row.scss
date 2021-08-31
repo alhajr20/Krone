@@ -84,3 +84,11 @@
         }
     }
 }
+
+@media screen and (max-width: 769px) {
+    .row {
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+}

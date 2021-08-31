@@ -23,7 +23,7 @@
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <!-- Favicon  -->
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
@@ -39,93 +39,150 @@
     <link rel="manifest" href="icons/favicon//manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> -->
 
+    <!-- <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    /> -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="root">
         <header class="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="header__left">
-                        <div class="header__logo">
-                            <img src="./img/logo.png" alt="header logo">
+            <div class="header__mobileLogo">
+                <img src="./img/logo.png" alt="mobile logo">
+            </div>
+            <div class="header__items">
+                <div class="header__menu">
+                    <h2>Каталог</h2>
+                    <ul>
+                        <li><a href="#">Акции, скидки и распродажи</a></li>
+                        <li><a href="#">Школьная распродажа!</a></li>
+                        <li><a href="#">Смартфоны и гаджеты</a></li>
+                        <li><a href="#">Телевизоры, аудио, Hi-Fi</a></li>
+                        <li><a href="#">Ноутбуки и компьютеры</a></li>
+                    </ul>
+                    <div class="dropdown">
+                        <div class="dropdown__wrapper">
+                            <div class="dropdown__item">
+                                <h4>Смартфоны</h4>
+                                <ul>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown__item">
+                                <h4>Смартфоны</h4>
+                                <ul>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown__item">
+                                <h4>Смартфоны</h4>
+                                <ul>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <button class="menu-btn">
-                            <span></span>
-                        </button>
-                        <div class="header__search">
-                            <input type="text">
-                            <button>
-                                <ion-icon name="search-outline"></ion-icon>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="header__right">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <ion-icon name="time-outline"></ion-icon>
-                                    <p>
-                                        Статус заказа
-                                    </p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <p>
-                                        Войти
-                                    </p>
-                                </a>
-                            </li>
-                            <li>
-                                <button>
-                                    <ion-icon name="stats-chart-outline"></ion-icon>
-                                    <p>
-                                        Сравнение
-                                    </p>
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                    <ion-icon name="heart-outline"></ion-icon>
-                                    <p>
-                                        Избранное
-                                    </p>
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                    <ion-icon name="cart-outline"></ion-icon>
-                                    <p>
-                                        Корзина
-                                    </p>
-                                </button>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-                <nav class="header__nav">
-                    <ul>
-                        <li><a href="#">ВСЕ АКЦИИ</a></li>
-                        <li><a href="#">ШКОЛЬНАЯ РАСПРОДАЖА!</a></li>
-                        <li><a href="#">ЭКСПРЕСС-ДОСТАВКА</a></li>
-                        <li><a href="#">ЛУЧШИЕ ЦЕНЫ</a></li>
-                        <li><a href="#">СМАРТФОНЫ</a></li>
-                        <li><a href="#">ТЕЛЕВИЗОРЫ</a></li>
-                        <li><a href="#">ИГРОВЫЕ НОУТБУКИ</a></li>
-                        <li><a href="#">СТИРАЛЬНЫЕ МАШИНЫ</a></li>
-                        <li><a href="#">ХОЛОДИЛЬНИКИ</a></li>
-                    </ul>
-                </nav>
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__left">
+                            <div class="header__logo">
+                                <img src="./img/logo.png" alt="header logo">
+                            </div>
+                            <button class="menu-btn">
+                                <span></span>
+                            </button>
+                            <div class="header__search">
+                                <input type="text" placeholder="Поиск">
+                                <button>
+                                    <ion-icon name="search-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="header__right">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="time-outline"></ion-icon>
+                                        <p>
+                                            Статус заказа
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <p>
+                                            Войти
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <button>
+                                        <ion-icon name="stats-chart-outline"></ion-icon>
+                                        <p>
+                                            Сравнение
+                                        </p>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                        <p>
+                                            Избранное
+                                        </p>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <ion-icon name="cart-outline"></ion-icon>
+                                        <p>
+                                            Корзина
+                                        </p>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__navContainer">
+                <div class="container">
+                    <nav class="header__nav">
+                        <ul class="next-nav">
+                            <li><a href="#">ВСЕ АКЦИИ</a></li>
+                            <li><a href="#">ШКОЛЬНАЯ РАСПРОДАЖА!</a></li>
+                            <li><a href="#">ЭКСПРЕСС-ДОСТАВКА</a></li>
+                            <li><a href="#">ЛУЧШИЕ ЦЕНЫ</a></li>
+                            <li><a href="#">СМАРТФОНЫ</a></li>
+                            <li><a href="#">ТЕЛЕВИЗОРЫ</a></li>
+                            <li><a href="#">ИГРОВЫЕ НОУТБУКИ</a></li>
+                            <li><a href="#">СТИРАЛЬНЫЕ МАШИНЫ</a></li>
+                            <li><a href="#">ХОЛОДИЛЬНИКИ</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main>
             <section class="promo">
                 <div class="container">
-                    <div class="promo__wrapper">
+                    <div class="promo__wrapper swiper">
                         <button class="promo__prev">
                             <ion-icon name="chevron-back-outline"></ion-icon>
                         </button>
@@ -508,7 +565,10 @@
             <div class="container">
                 <div class="footer__wrapper">
                     <div class="footer__item">
-                        <h4>Покупателям</h4>
+                        <h4>
+                            Покупателям
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </h4>
                         <ul>
                             <li><a href="#">Каталог</a></li>
                             <li><a href="#">Частые вопросы</a></li>
@@ -523,7 +583,10 @@
                         </ul>
                     </div>
                     <div class="footer__item">
-                        <h4>Покупателям</h4>
+                        <h4>
+                            Покупателям
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </h4>
                         <ul>
                             <li><a href="#">Каталог</a></li>
                             <li><a href="#">Частые вопросы</a></li>
@@ -538,7 +601,10 @@
                         </ul>
                     </div>
                     <div class="footer__item">
-                        <h4>Покупателям</h4>
+                        <h4>
+                            Покупателям
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </h4>
                         <ul>
                             <li><a href="#">Каталог</a></li>
                             <li><a href="#">Частые вопросы</a></li>
@@ -553,7 +619,10 @@
                         </ul>
                     </div>
                     <div class="footer__item">
-                        <h4>Покупателям</h4>
+                        <h4>
+                            Покупателям
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </h4>
                         <ul>
                             <li><a href="#">Каталог</a></li>
                             <li><a href="#">Частые вопросы</a></li>
@@ -568,7 +637,10 @@
                         </ul>
                     </div>
                     <div class="footer__item">
-                        <h4>Покупателям</h4>
+                        <h4>
+                            Покупателям
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </h4>
                         <ul>
                             <li><a href="#">Каталог</a></li>
                             <li><a href="#">Частые вопросы</a></li>
@@ -611,6 +683,7 @@
         </footer>
     </div>
 
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
     <script src="js/app.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

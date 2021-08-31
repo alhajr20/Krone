@@ -59,3 +59,40 @@
         width: 50%;
     }
 }
+
+@media screen and (max-width: 769px) {
+    .subscribe {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__info, &__form {
+            width: 100%;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+
+            input {
+                width: 50%;
+            }
+
+            button {
+                width: 50%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .subscribe {
+        &__form {
+            input, button {
+                width: 100%;
+            }
+        }
+    }
+}

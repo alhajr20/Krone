@@ -149,3 +149,23 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .promo {
+        .container {
+            grid-template-columns: 100%;
+            row-gap: 50px;
+        }
+
+        &__wrapper {
+            margin-right: 0;
+        }
+
+        &__right {
+            .product {
+                width: 50%;
+                margin: 0 auto;   
+            }
+        }
+    }
+}

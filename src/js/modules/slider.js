@@ -53,7 +53,9 @@ function slider() {
         arrDots.push(dot);
     }
 
-    next.addEventListener('click', function() {
+    next.addEventListener('click', moveSlider);
+
+    function moveSlider() {
         if (offset == +width.slice(0, width.length - 2) * (slides.length - 1)) {
             offset = 0;
         } else {
@@ -69,8 +71,8 @@ function slider() {
         }
 
         arrDots.forEach(dot => dot.style.opacity = '.5');
-        arrDots[slideIndex - 1].style.opacity = 1; 
-    });
+        arrDots[slideIndex - 1].style.opacity = 1;
+    }
 
     prev.addEventListener('click', function() {
         if (offset == 0) {
@@ -88,7 +90,7 @@ function slider() {
         }
 
         arrDots.forEach(dot => dot.style.opacity = '.5');
-        arrDots[slideIndex - 1].style.opacity = 1; 
+        arrDots[slideIndex - 1].style.opacity = 1;
     });
 
     arrDots.forEach(dot => {
@@ -104,6 +106,8 @@ function slider() {
             arrDots[slideIndex - 1].style.opacity = 1;
         });
     });
+
+    setInterval(moveSlider, 4000);
 }
 
 export default slider;
