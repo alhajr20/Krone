@@ -1,13 +1,18 @@
 .row {
     margin-top: 5.6rem;
 
+    .container {
+        overflow: hidden;
+    }
+
     &__title {
         font-size: 32px;
     }
 
     &__wrapper {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 16rem));
+        display: flex;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax(10rem, 16rem));
         justify-content: space-between;
         gap: 50px;
         margin-top: 24px;

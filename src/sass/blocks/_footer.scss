@@ -110,3 +110,24 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .footer {
+        &__logo {
+            img {
+                width: 120px;
+                height: 80px;
+            }
+        }
+
+        &__social {
+            ul {
+                li {
+                    a {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
