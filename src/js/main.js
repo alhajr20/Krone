@@ -156,8 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             breakpoints: {
                 300: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 0,
+                    slidesPerView: 1.6,
+                    spaceBetween: 5,
                 },
 
                 500: {
@@ -187,7 +187,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const headerSection = document.querySelector('.header');
+    const sliderFiveth = document.querySelector('.promo__mobileMenu .swiper');
+
+    let mySwiper5 = new Swiper(sliderFiveth, {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        loop: true,
+        direction: 'horizontal',
+
+        breakpoints: {
+            0: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+
+            400: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+        },
+    });
+
+    const headerSection = document.querySelector('.header__items');
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 100) {
