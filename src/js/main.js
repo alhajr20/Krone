@@ -2,12 +2,15 @@ import slider from '../js/modules/slider';
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const menuBtn = document.querySelector('.menu-btn');
+    const menuBtn = document.querySelectorAll('.menu-btn');
     const menuNav = document.querySelector('.header__menu');
 
-    menuBtn.addEventListener('click', () => {
-        menuBtn.classList.toggle('menu-active');
-        menuNav.classList.toggle('menu-active_global');
+    console.log(menuBtn);
+
+    menuBtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+            menuNav.classList.toggle('menu-active_global');
+        });
     });
 
     document.querySelectorAll('.footer__item h4').forEach(item => {
