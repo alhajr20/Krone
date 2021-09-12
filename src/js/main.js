@@ -159,8 +159,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             breakpoints: {
                 300: {
-                    slidesPerView: 1.6,
-                    spaceBetween: 5,
+                    slidesPerView: 1.2,
+                    spaceBetween: 0,
                 },
 
                 500: {
@@ -178,10 +178,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     spaceBetween: 0,
                 }
             },
-            // autoplay: {
-            //     delay: 4000,
-            //     disableOnInteraction: false
-            // },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
     
             navigation: {
                 nextEl: '.swiper-button-next',
